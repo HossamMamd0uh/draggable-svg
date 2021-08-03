@@ -8,7 +8,10 @@ import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
-
+import ViewListIcon from '@material-ui/icons/ViewList';
+import AddIcon from '@material-ui/icons/Add';
+import ImportExportIcon from '@material-ui/icons/ImportExport';
+import Grid from '@material-ui/core/Grid';
 const Home = () => {
     const [name, setName] = React.useState('tamer');
 
@@ -78,6 +81,53 @@ const Home = () => {
             </Typography>
         </Toolbar>
         </AppBar>
+        <p className="diagramTitle">Single Line Diagram of BlokSeT switchboard tamer</p>
+        <Toolbar className="diagramBar">
+            <Typography className="activeDiagramBarTitle">
+                Incomer
+            </Typography>
+            <Typography className="diagramBarTitle">
+                Bus Tie
+            </Typography>
+            <Typography  className="diagramBarTitle">
+                FEEDER/ACB
+            </Typography>
+            <Typography  className="diagramBarTitle">
+                FEEDER/MCCB
+            </Typography>
+            <Typography  className="diagramBarTitle">
+                FEEDER/Motor
+            </Typography>
+            <Typography  className="diagramBarTitle">
+                FEEDER/VSD-SS
+            </Typography>
+            <Typography  className="diagramBarTitle">
+                PFC
+            </Typography>
+
+        </Toolbar>
+        <Grid container>
+            <Grid item sm={2} className="diagramSidebarParent">
+                <Toolbar className="diagramSidebar">
+                    <Typography className="diagramSidebarTitle">
+                        <ViewListIcon /> From Library
+                    </Typography>
+                    <Typography className="diagramSidebarTitle">
+                        <ImportExportIcon /> From Another Project
+                    </Typography>
+                    <Typography  className="diagramSidebarTitle">
+                    <AddIcon /> From Scratch
+                    </Typography>
+                </Toolbar>
+            </Grid>
+            <Grid item sm={10} className="diagramSidebarImages">
+                <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/123699837/original/93cf4c607c0578413ca4d5228fe339c2840ee070/help-you-in-electronic-circuit-design-analysis-simulation.jpg" className="circuitImage"></img>
+                <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/123699837/original/93cf4c607c0578413ca4d5228fe339c2840ee070/help-you-in-electronic-circuit-design-analysis-simulation.jpg" className="circuitImage"></img>
+                <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/123699837/original/93cf4c607c0578413ca4d5228fe339c2840ee070/help-you-in-electronic-circuit-design-analysis-simulation.jpg" className="circuitImage"></img>
+                <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/123699837/original/93cf4c607c0578413ca4d5228fe339c2840ee070/help-you-in-electronic-circuit-design-analysis-simulation.jpg" className="circuitImage"></img>
+                
+            </Grid>
+        </Grid>
       </div>
     );
 }
