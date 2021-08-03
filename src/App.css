@@ -13,6 +13,29 @@
   }
 }
 
+.MuiAppBar-colorPrimary{
+  background-color: white !important;
+  color: #3DCE59 !important;
+}
+
+.subtitle{
+  color: black !important;
+  margin-left: 50px !important;
+}
+
+.next{
+  color: black !important;
+}
+
+.employeeName{
+  color: black !important;
+}
+
+.MuiBreadcrumbs-ol{
+  background-color: #3DCE59 !important;
+}
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,8 +47,53 @@
   color: white;
 }
 
+.MuiBreadcrumbs-ol{
+  color: gray !important;
+}
+
+.seconedBar{
+  background-color: #3DCE59 !important;
+  height: 31px !important;
+  min-height: 28px !important;
+}
+
+.active{
+  margin-right: 20px !important;
+  color: white !important;
+  
+}
+
+.currentActive{
+  margin-right: 20px !important;
+  color: white !important;
+  border-bottom: 3px solid white !important;
+  line-height: 28px !important;
+}
+
+.inactive{
+  color: gray !important;
+  margin-right: 20px !important;
+}
+
+.MuiTypography-colorTextPrimary{
+  color: white !important;
+}
+
 .App-link {
   color: #61dafb;
+}
+
+.diamond {
+  width: 20px;
+  height: 20px;
+  background: #3DCE59 ;
+  opacity: 0.3;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+  margin-top: 7px;
+  margin-left: 2px;
+  margin-right: 2px;
+  box-shadow: 0 4px 4px rgb(0 0 0 / 80%);
 }
 
 @keyframes App-logo-spin {
