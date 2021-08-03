@@ -96,6 +96,57 @@
   box-shadow: 0 4px 4px rgb(0 0 0 / 80%);
 }
 
+.diagramTitle{
+  margin-left: 10px !important;
+  color: gray !important;
+}
+
+.diagramBarTitle{
+  color: black !important;
+  padding: 10px !important;
+}
+
+.activeDiagramBarTitle{
+  color: black !important;
+  padding: 10px !important;
+  border-bottom: 3px solid #3DCE59;
+}
+
+.diagramSidebar{
+  display: block !important;
+}
+
+.diagramSidebarTitle{
+  background-color: #3DCE59 !important;
+  width: 100% !important;
+  margin-top: 2px !important;
+  color:white !important;
+  width: 247px !important;
+  margin-left: -21px !important;
+
+}
+
+.diagramSidebarParent{
+  width: 60% !important;
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
+}
+
+.diagramSidebarImages{
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  background-color: 	#F5F5F5;
+}
+
+.circuitImage{
+  width: 250px;
+  height: 100px;
+  margin-left: 50px !important;
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
